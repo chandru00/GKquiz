@@ -1,4 +1,4 @@
-### Name of the home work - Assignment 2 (Quiz)
+### Name of the home work - Assignment 2 (Quiz application)
 #### Team Members:
 ##### chandrasekar kabali - N01324968
 ##### Mohammed Munaf - N01317767
