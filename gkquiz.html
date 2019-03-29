@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>General Knowledge JavaScript Quiz</title>
+    <link rel="stylesheet" type="text/css" href="gkquiz.css"/>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="gkquiz.js"></script>
+</head>
+<body>
+<header>
+    <h1 class="w3-animate-zoom"><img
+            src="assets/images/logo.png"
+            alt="logo image" class="logoImg">General Knowledge Quiz</h1>
+</header>
+
+<section class="introPage">
+    <h3>Welcome to the best General Knowledge Quiz ever!!</h3>
+    <input type="button" value="Click here" id="btn-intro">
+</section>
+<div class="progress">
+    <ul>
+        <li class="current">1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+    </ul>
+</div>
+<div class="quizOutline">
+    <div class="StartQuiz">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ_wbUm1vMiakLbNj1q4biA8lro-mtV_OjvS_wG6q-_9M5peKRBQ"
+             alt="score board image" class="scoreImg">
+        <span class="scoreCard"></span>
+        <hr>
+        <span>Question: </span><span class="questionNumber"></span>
+    </div>
+    <div class="quizMain">
+        <form class="questionsForm">
+            <p id="questionText"></p>
+            <label class="options">
+                <input id="option0" type="radio" name="option">
+                <span></span>
+            </label>
+            <label class="options">
+                <input id="option1" type="radio" name="option">
+                <span></span>
+            </label>
+            <label class="options">
+                <input id="option2" type="radio" name="option">
+                <span></span>
+            </label>
+            <label class="options">
+                <input id="option3" type="radio" name="option">
+                <span></span>
+            </label>
+            <input type="text" id="txtAnswer" class="hidden">
+            <input type="button" value="Prev" class="prev" id="btn-prev">
+            <input type="button" value="Next" class="next" id="btn-next">
+            <input type="button" value="Quit Quiz" id="btn-quit" class="review-btns">
+            <input type="button" value="Review Later" id="btn-review-later" class="review-btns">
+            <input type="button" value="Review Now" id="btn-review-now" class="review-btns">
+        </form>
+    </div>
+
+</div>
+
+<section class="alert-box hidden">
+    <div class="alert-box-block">
+        <button type="button" class="btn-close">X</button>
+        <img src="" class="alert-icon">
+        <span id="alertText"></span>
+        <div>
+            <button id="btn-close" value="Close">Close</button>
+        </div>
+    </div>
+</section>
+
+<section class="endPage hidden">
+    <h4 id="finalScore"></h4>
+    <div class="correctAnswer">
+        <img src="assets/images/tick.png"
+             alt="correct-icon">
+        <span class="count"></span>
+    </div>
+    <div class="wrongAnswer">
+        <img src="assets/images/cross.png"
+             alt="wrong-icon">
+        <span class="count"></span>
+    </div>
+    <div class="scoresheet">
+        <table>
+            <thead>
+                <tr>
+                    <th>Question</th>
+                    <th>Correct Answer</th>
+                    <th>Your Answer</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+    <input type="button" id="btn-startover" value="Start Over">
+</section>
+</body>
+</html>

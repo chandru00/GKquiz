@@ -1,0 +1,349 @@
+
+body {
+    background-color: #F0F0F0;
+    font-size: 13px;
+}
+
+header {
+    border-radius: 50px;
+    border: 1px solid black;
+    text-align: center;
+    height: 95px;
+    margin: 15px;
+    background-color: #DCDCDC;
+    padding: 2px;
+    font-size: 2px;
+    font-family: Calibri;
+    color: black;
+
+}
+
+.logoImg {
+    width: 55px;
+    height: 70px;
+    margin-right: 12px;
+    vertical-align: middle;
+}
+
+.introPage, .alert-box-block, .endPage {
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 500px;
+    font-family: Lucida Calligraphy;
+    font-size: 20px;
+}
+
+#btn-intro {
+    border: 1px solid black;
+    border-radius: 15px;
+    font-size: 17px;
+    background-color: white;
+    padding: 9px 12px;
+}
+
+#btn-intro:hover {
+    background-color: #DCDCDC;
+    transition-duration: 0.6s;
+}
+
+.quizOutline {
+    margin: 0 auto;
+    max-width: 700px;
+    padding: 30px;
+    background-color: #DCDCDC;
+    border-radius: 15px;
+    margin-top: 40px;
+    box-shadow: 5px 5px grey;
+    position: relative;
+    display: none;
+}
+
+.StartQuiz, .questionsForm, .scoreCard {
+    padding: 5px;
+}
+
+.scoreImg {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    left: 450px;
+    top: 10px;
+    margin: 0px;
+}
+
+.scoreCard {
+    position: absolute;
+    left: 500px;
+    top: 18px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.questionsForm p {
+    font-size: 20px;
+    border: 1px solid #e0e0d1;
+}
+
+.options {
+    display: block;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 5px;
+    font-size: 17px;
+}
+
+#btn-next, #btn-prev {
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 5px;
+    /*margin-top: 45px;*/
+    display: inline;
+    box-shadow: 3px 3px grey;
+}
+
+#btn-prev:hover, #btn-next:hover, .review-btns:hover {
+    background-color: #F0F0F0;
+}
+
+#btn-quit {
+    color: red;
+}
+
+.review-btns {
+    border-radius: 5px;
+    box-shadow: 3px 3px grey;
+    font-size: 12px;
+    padding: 5px;
+    display: block;
+    float: right;
+    /*margin-top: 25px;*/
+}
+
+.alert-box {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0;
+    bottom: 0;
+    /*display: none;*/
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+}
+
+.alert-box-block {
+    max-width: 600px;
+    width: 240px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 0 auto;
+    margin-top: 180px;
+    position: relative;
+    background-color: #F0F0F0;
+}
+
+#alertText {
+    display: block;
+    text-align: center;
+}
+
+.btn-close {
+    display: block;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    background: #ebebe0;
+    border-radius: 800px;
+    width: 27px;
+    height: 25px;
+    padding: 0px;
+    font-size: 18px;
+}
+
+.alert-box-block img {
+    height: 120px;
+    width: 130px;
+    display: block;
+    margin: 0 auto;
+}
+
+.endPage h4 {
+    margin: 0px;
+    display: inline-block;
+}
+
+.endPage img {
+    height: 35px;
+    width: 35px;
+    margin: 10px;
+    vertical-align: middle;
+}
+
+.count {
+    font-size: 18px;
+}
+
+#btn-startover {
+    margin-top: 15px;
+    font-size: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 3px grey;
+}
+
+.hidden {
+    display: none;
+}
+
+/*Progress Bar css*/
+html, body {
+}
+body {
+    background-color: #f8f8f8;
+    font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.center {
+    color: #d6d6d6;
+    text-align: center;
+    margin-top: 50px;
+}
+.buttons {
+    display: block;
+    width: 100%;
+    margin-top: 65px;
+    text-align: center;
+}
+.buttons a {
+    text-decoration: none;
+    background-color: gray;
+    padding: 8px 25px;
+    color: #ffffff;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.buttons a:hover {
+    background-color: #cfcfcf;
+}
+a.next {
+    margin-left: 25px;
+}
+a.prev {
+    margin-right: 25px;
+}
+/* =================== */
+/* PROGRESS BAR STYLES */
+/* =================== */
+.progress {
+    width: 100%;
+    max-width: 800px;
+    margin: 30px auto 0;
+    display: table;
+    position: relative;
+    text-align: center;
+    left: 4%;
+    opacity:0;
+}
+.progress ul {
+    display: table-row;
+}
+.progress ul li {
+    background-color: #d6d6d6; /* Default Bar Color */
+    display: table-cell;
+    position: relative;
+    line-height: 20px;
+    z-index: -3;
+    color: #FFF;
+    text-align: left;
+    transition: background-color 0.75s, color 0.5s;
+}
+.progress ul li::before {
+    content:'';
+    width: 40px;
+    height: 40px;
+    color: #FFF;
+    line-height: 30px;
+    text-align: center;
+    left: -15px;
+    background-color: #d6d6d6;/* Default Circle Color */
+    border: solid 5px #d6d6d6;/* Default Circle Color */
+    index: -9;
+    position: absolute;
+    display: block;
+    top: -10px;
+    margin-right: auto;
+    margin-left: auto;
+    z-index: -1;
+
+    transition: background-color 0.75s, color 0.5s;
+
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+/* CURRENT STEP */
+.progress ul li.current {
+    display: inline-block;
+    width: 100%;
+    z-index: -3;
+    color: #0e90d2;
+    position: relative;
+    transition: background-color 0.75s, color 0.5s;
+
+}
+.progress ul li.current::before {
+    border: solid 5px #0e90d2;/* Current Step Circle Color */
+    background-color: #FFF;
+    transition: background-color 0.75s, color 0.5s;
+
+    -webkit-animation: pulse 3s ease-out;
+    -moz-animation: pulse 3s ease-out;
+    animation: pulse 3s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+/* COMPLETED STEPS */
+.progress ul li.complete {
+    background-color: #0e90d2; /* Completed Step Bar Color */
+    transition: background-color 0.75s, color 0.5s;
+}
+.progress ul li.complete::before {
+    background-color: #0e90d2; /* Completed Step Circle Color */
+    border: 5px solid transparent;
+    transition: background-color 0.75s, color 0.5s;
+}
+/* REMOVE FIRST STEP COLOR BAR LINE */
+.progress ul li:last-of-type {
+    background-color: transparent;
+}
+.progress ul li.current:last-of-type,
+.progress ul li.complete:last-of-type  {
+    background-color: transparent;
+}
+
+@-webkit-keyframes pulse {
+    0% {-webkit-transform: scale(1, 1);}
+    50% {-webkit-transform: scale(1.1, 1.1);}
+    100% {-webkit-transform: scale(1, 1);}
+}
+@-keyframes pulse {
+0% {transform: scale(1, 1);}
+50% {transform: scale(1.1, 1.1);}
+100% {transform: scale(1, 1);}
+}
+/*End*/
