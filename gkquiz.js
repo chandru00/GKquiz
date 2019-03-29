@@ -508,8 +508,6 @@ $(document).on('click', '#btn-intro, #btn-startover', function (event) {
     $('.introPage, .endPage').addClass('hidden');
     $('.quizOutline').fadeIn("slow");
     $('.progress').css("opacity","1");
-
-    $('.current')
     resetQuiz();
     showQuizQuestion();
 });
